@@ -1,0 +1,126 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    font-family: 'Roboto', 'Arial', sans-serif;
+}
+
+ul li{
+    list-style-type: none;
+}
+
+
+/*
+///////////////
+BODY
+//////////////
+*/
+
+body {
+    background: #E8CBC0;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #636FA4, #E8CBC0);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #636FA4, #E8CBC0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.mainDiv {
+    width: 100%;
+    padding-top: 10%;
+}
+
+.centerDiv {
+    width: 360px;
+    margin: 0 auto;
+    background-color: #f7f7f7;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    overflow: hidden;
+    padding: 0.6rem;
+    background-color: rgb(0, 126, 199);
+    color: white;
+}
+
+.header h2 {
+    font-size: 1.5rem;
+    display: inline-block;
+    font-weight: 500;
+}
+
+.header i {
+    cursor: pointer;
+    float: right;
+    font-size: 1.5rem;
+}
+
+.todo-input-div input {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1rem;
+    color: rgb(50, 174, 245);
+    background-color: #f7f7f7;
+    border: none;
+    font-weight: 700;
+}
+
+.todo-input-div input::placeholder {
+    color: rgb(96, 125, 255);
+    opacity: 0.5;
+}
+
+.todo-input-div input:focus {
+    border: 1px solid rgb(50, 174, 245);
+}
+
+ul li {
+    height: 40px;
+    line-height: 40px;
+    transition: background-color 0.5s ease;
+    background-color: #fff;
+    font-weight: 400;
+    color: #535353;
+}
+
+ul li:nth-child(even) {
+    background-color: #f7f7f7;
+}
+
+ul li:hover span {
+    width: 40px;
+    opacity: 1;
+}
+
+span {
+    background-color: #e74c3c;
+    color: #fff;
+    text-align: center;
+    width: 0px;
+    display: inline-block;
+    cursor: pointer;
+    margin-right: 20px;
+    transition: width 0.1s linear;
+    opacity: 0;
+}
+
+
+/*
+///////////////////
+Utility Classes
+//////////////////
+*/
+
+.todos ul .cancel {
+    background-color: #f0dcdc;
+    color: #9b9b9b;
+    font-weight: 300;
+    text-decoration: line-through;
+    transition: background-color 0.5s ease;
+    -webkit-transition: background-color 0.5s ease;
+    -moz-transition: background-color 0.5s ease;
+}
+
+.fas.disabled {
+    display: none !important;
+}
